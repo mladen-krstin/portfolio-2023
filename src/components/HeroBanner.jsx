@@ -10,6 +10,7 @@ import { useFollowPointer } from './useFollowPointer'
 import { CiLinkedin } from 'react-icons/ci'
 
 const HeroBanner = () => {
+	const mailTo = 'mailto:contact@dev78.net'
 	const ref = useRef(null)
 	const { x, y } = useFollowPointer(ref)
 	return (
@@ -45,7 +46,7 @@ const HeroBanner = () => {
 						>
 							<img
 								src={logo}
-								alt=''
+								alt='logo'
 								className='w-[75px] md:w-[180px]'
 							/>
 						</div>
@@ -53,7 +54,10 @@ const HeroBanner = () => {
 					</div>
 					<ul className='hidden md:flex 2xl:text-[24px]'>
 						<li className='cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg'>
-							<a href='https://www.linkedin.com/in/mladen-krstin/'>
+							<a
+								href='https://www.linkedin.com/in/mladen-krstin/'
+								alt='linkedin'
+							>
 								<CiLinkedin
 									size={32}
 									color='#fff'
@@ -72,13 +76,13 @@ const HeroBanner = () => {
 						>
 							Skills
 						</li>
-						{/* <li
+						<li
 							className='cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg'
 							onClick={() => scrollTo('work')}
 						>
 							Work
 						</li>
-						<li
+						{/* <li
 							className='cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg'
 							onClick={() => scrollTo('contact')}
 						>
@@ -164,18 +168,18 @@ const HeroBanner = () => {
 				>
 					<img
 						src={man}
-						alt=''
+						alt='profilePic'
 						className='hidden md:block'
 					/>
 
 					{/* HIRE ME BUTTON START */}
 					<div
 						className='absolute top-[320px] right-3 lg:top-[400px] lg:right-[80%] 2xl:top-[550px] 2xl:right-[90%] w-[140px] h-[140px] rounded-full bg-white/[0.7] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90'
-						onClick={() => scrollTo('contact')}
+						onClick={() => (window.location = mailTo)}
 					>
 						<img
 							src={externalLinkIcon}
-							alt=''
+							alt='arrow'
 							className='w-[15px]'
 						/>
 						<div className='text-black'>Hire Us</div>

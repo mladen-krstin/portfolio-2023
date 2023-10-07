@@ -4,7 +4,7 @@ import { motion, useTransform, useScroll } from 'framer-motion'
 import Wrapper from './Wrapper'
 import SkillIcon from './SkillIcon'
 import Service from './Service'
-// import Portfolio from './Portfolio'
+import Portfolio from './Portfolio'
 import Achievements from './Achievements'
 import Div from './Div'
 
@@ -18,13 +18,13 @@ import sk6 from '../assets/nextjs.png'
 import sk7 from '../assets/node.png'
 import sk8 from '../assets/firebase.png'
 import sk9 from '../assets/mongo.png'
-import sk10 from '../assets/wordpress.png'
+import sk10 from '../assets/wordpress.webp'
 import sk11 from '../assets/woo-logo.webp'
 import sk12 from '../assets/github1.png'
-import pattern from '../assets/heading-pattern.png'
-import pe1 from '../assets/sec-3-p-e-1.png'
-import pe2 from '../assets/sec-3-p-e-2.png'
-import pe3 from '../assets/sec-3-p-e-3.png'
+import pattern from '../assets/heading-pattern.webp'
+import pe1 from '../assets/sec-3-p-e-1.webp'
+import pe2 from '../assets/sec-3-p-e-2.webp'
+import pe3 from '../assets/sec-3-p-e-3.webp'
 
 const Skills = () => {
 	const { scrollY } = useScroll()
@@ -43,33 +43,72 @@ const Skills = () => {
 				className='sec-3-p-e-1'
 				style={{ y: y1 }}
 				src={pe1}
+				alt='pe1'
 			/>
 			<motion.img
 				className='sec-3-p-e-2'
 				style={{ y: y2 }}
 				src={pe2}
+				alt='pe2'
 			/>
 			<motion.img
 				className='sec-3-p-e-3'
 				style={{ y: y3 }}
 				src={pe3}
+				alt='pe3'
 			/>
 			{/* BACKGROUND ELEMENTS END */}
 			<Wrapper>
 				{/* SKILL ICONS START */}
 				<Div className='grid grid-cols-4 gap-3 md:grid-cols-6 xl:grid-cols-12 relative'>
-					<SkillIcon path={sk1} />
-					<SkillIcon path={sk2} />
-					<SkillIcon path={sk3} />
-					<SkillIcon path={sk4} />
-					<SkillIcon path={sk5} />
-					<SkillIcon path={sk6} />
-					<SkillIcon path={sk7} />
-					<SkillIcon path={sk8} />
-					<SkillIcon path={sk9} />
-					<SkillIcon path={sk10} />
-					<SkillIcon path={sk11} />
-					<SkillIcon path={sk12} />
+					<SkillIcon
+						path={sk1}
+						alt='sk1'
+					/>
+					<SkillIcon
+						path={sk2}
+						alt='sk2'
+					/>
+					<SkillIcon
+						path={sk3}
+						alt='sk3'
+					/>
+					<SkillIcon
+						path={sk4}
+						alt='sk4'
+					/>
+					<SkillIcon
+						path={sk5}
+						alt='sk5'
+					/>
+					<SkillIcon
+						path={sk6}
+						alt='sk6'
+					/>
+					<SkillIcon
+						path={sk7}
+						alt='sk7'
+					/>
+					<SkillIcon
+						path={sk8}
+						alt='sk8'
+					/>
+					<SkillIcon
+						path={sk9}
+						alt='sk9'
+					/>
+					<SkillIcon
+						path={sk10}
+						alt='sk10'
+					/>
+					<SkillIcon
+						path={sk11}
+						alt='sk11'
+					/>
+					<SkillIcon
+						path={sk12}
+						alt='sk12'
+					/>
 				</Div>
 				{/* SKILL ICONS END */}
 
@@ -79,24 +118,6 @@ const Skills = () => {
 					<div className='md:max-w-[65%] flex flex-col gap-6 md:gap-10'>
 						<Service
 							// num='1'
-							title='WordPress Website Design'
-							desc='My team and I will find the best solution for your business portfolio of webshop. We will help you to choose best theme and plugins for your needs. We will guide you thru building process.'
-							data={[
-								'Prototype',
-								'Wireframe',
-								'Theme Selection',
-								'Plugins Selection',
-								'Multilanguage',
-							]}
-						/>
-						<Service
-							// num='2'
-							title='WordPress Profesional Development'
-							desc='In website development with WordPress CMS, we use only checked and verified builders, such as, Elementor, Themify and WPBaker. This builders allows us to achive the best quality and SEO friendly enviroment.'
-							data={['Elementor', 'Themify', 'WPBaker']}
-						/>
-						<Service
-							// num='3'
 							title='Frontend Development'
 							desc='When we creating custom tailored websites and webshops, we lay thrust in React.js library and Next.js framework. All websites are in responsive design from ultra wide desktops to mobile devices.'
 							data={[
@@ -108,7 +129,7 @@ const Skills = () => {
 							]}
 						/>
 						<Service
-							// num='4'
+							// num='2'
 							title='Backend Development'
 							desc='Sometimes Frontend need support from Backend. In those cases, development was done in Node.js, MongoDB and AWS S3 services.'
 							data={[
@@ -121,6 +142,24 @@ const Skills = () => {
 								'AWS',
 							]}
 						/>
+						<Service
+							// num='3'
+							title='WordPress Website Design'
+							desc='My team and I will find the best solution for your business portfolio of webshop. We will help you to choose best theme and plugins for your needs. We will guide you thru building process.'
+							data={[
+								'Prototype',
+								'Wireframe',
+								'Theme Selection',
+								'Plugins Selection',
+								'Multilanguage',
+							]}
+						/>
+						<Service
+							// num='4'
+							title='WordPress Profesional Development'
+							desc='In website development with WordPress CMS, we use only checked and verified builders, such as, Elementor, Themify and WPBaker. This builders allows us to achive the best quality and SEO friendly enviroment.'
+							data={['Elementor', 'Themify', 'WPBaker']}
+						/>
 					</div>
 					{/* SERVICES END */}
 
@@ -132,6 +171,7 @@ const Skills = () => {
 							Through
 							<img
 								src={pattern}
+								alt='throught'
 								className='block md:hidden w-[80px] mt-1'
 							/>
 						</span>
@@ -139,6 +179,7 @@ const Skills = () => {
 							Good{' '}
 							<img
 								src={pattern}
+								alt='good'
 								className='hidden md:block md:w-[140px] 2xl:w-[190px] mt-3'
 							/>
 						</span>
@@ -148,7 +189,7 @@ const Skills = () => {
 				</div>
 				{/* SERVICES SECTION END */}
 
-				{/* <Portfolio /> */}
+				<Portfolio />
 				<Achievements />
 			</Wrapper>
 		</div>

@@ -2,9 +2,9 @@ import React from 'react'
 import { motion, useTransform, useScroll } from 'framer-motion'
 
 import Wrapper from './Wrapper'
-import flag from '../assets/serbian-flag.png'
-import pe1 from '../assets/sec-2-p-e-1.png'
-import pe2 from '../assets/sec-2-p-e-2.png'
+import flag from '../assets/serbian-flag.webp'
+import pe1 from '../assets/sec-2-p-e-1.webp'
+import pe2 from '../assets/sec-2-p-e-2.webp'
 import Div from './Div'
 
 const AboutMe = () => {
@@ -22,11 +22,13 @@ const AboutMe = () => {
 				className='sec-2-p-e-1'
 				style={{ y: y1 }}
 				src={pe1}
+				alt='pe1'
 			/>
 			<motion.img
 				className='sec-2-p-e-2'
 				style={{ y: y2 }}
 				src={pe2}
+				alt='pe2'
 			/>
 			{/* BACKGROUND ELEMENTS END */}
 
@@ -38,7 +40,7 @@ const AboutMe = () => {
 						<span>Based</span>
 						<img
 							src={flag}
-							alt=''
+							alt='flag'
 							className='w-[70px] md:w-[150px] 2xl:w-[190px] block mt-1 md:mt-2'
 						/>
 						<span>In Serbia</span>

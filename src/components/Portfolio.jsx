@@ -28,14 +28,14 @@ const Portfolio = () => {
 				<div className='flex text-center justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-2'>
 					Latest Projects
 				</div>
-				<div className='text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-[#CCCCCC] text-center'>
+				<div className='text-[20px] 2xl:text-[30px] leading-[24px] 2xl:leading-[32px] text-[#CCCCCC] text-center mb-14 2xl:mb-24'>
 					Feel free to take a look some of previous projects.
 				</div>
 			</Div>
 			{/* SECTION HEADING END */}
 
 			{/* FILTER TAGS START */}
-			<Div className='flex flex-wrap justify-center md:justify-center gap-[10px] mb-[50px] overflow-auto'>
+			{/* <Div className='flex flex-wrap justify-center md:justify-center gap-[10px] mb-[50px] overflow-auto'>
 				{filters.map((item, index) => (
 					<div
 						key={index}
@@ -47,11 +47,11 @@ const Portfolio = () => {
 						{item.name}
 					</div>
 				))}
-			</Div>
+			</Div> */}
 			{/* FILTER TAGS START */}
 
 			{/* PROJECTS GRID START */}
-			<div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
 				{projectData.map((item, index) => {
 					return (
 						<Div
@@ -59,12 +59,15 @@ const Portfolio = () => {
 							className='flex flex-col gap-4 cursor-pointer'
 						>
 							<div className='bg-black rounded-[20px] aspect-video overflow-hidden'>
-								<img
-									src={item.image}
-									className='transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear'
-								/>
+								<a href={item.url}>
+									<img
+										src={item.image}
+										alt={item.alt}
+										className='transition-transform hover:scale-125 hover:duration-2500 ease-linear'
+									/>
+								</a>
 							</div>
-							<div className='text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center'>
+							<div className='text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center mb-10'>
 								{item.name}
 							</div>
 						</Div>

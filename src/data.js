@@ -1,9 +1,8 @@
-import p1 from "./assets/project-1.png";
-import p2 from "./assets/project-2.png";
-import p3 from "./assets/project-3.png";
-import p4 from "./assets/project-4.png";
-import p5 from "./assets/project-5.png";
-import p6 from "./assets/project-6.png";
+import p1 from "./assets/project-1.webp";
+import p2 from "./assets/project-2.webp";
+import p3 from "./assets/project-3.webp";
+import p4 from "./assets/project-4.webp";
+
 
 export const filters = [
     {
@@ -26,35 +25,43 @@ export const filters = [
 
 export const projects = [
     {
-        name: "Join the Innovative Car Wash Service",
+        name: "Clean & neat bussines web presentation ",
         image: p1,
-        tags: ["wordpress", "web-shop"],
+        alt: "grif",
+        tags: ["react", "onepage-site"],
+        url: "https://grif.rs",
     },
     {
-        name: "Your Luggage is in Safe Hands",
+        name: "Professional web-shop with administrator dashboard",
         image: p2,
-        tags: ["wordpress", "web-shop"],
+        alt: "himtex",
+        tags: ["react", "next", "web-shop"],
+        url: "https://himtexcompany.com/",
     },
     {
-        name: "The Art of Hiring",
+        name: "Joint Project - business tools for users",
         image: p3,
-        tags: ["custome-website", "wordpress"],
+        alt: "sustan",
+        tags: ["react", "dot-net", "joint-project"],
+        url: "https://sustan.rs/",
     },
     {
-        name: "We Are Solving Global Problems",
+        name: "All in One - Business presentation and web-shop",
         image: p4,
-        tags: ["custome-website"],
+        alt: "decorambient",
+        tags: ["wordpress", "web-shop"],
+        url: "https://decorambient.com/",
     },
-    {
-        name: "The English Tea Ceremony",
-        image: p5,
-        tags: ["web-shop", "custome-website"],
-    },
-    {
-        name: "Saving Photo Memories",
-        image: p6,
-        tags: ["website"],
-    },
+    // {
+    //     name: "The English Tea Ceremony",
+    //     image: p5,
+    //     tags: ["web-shop", "custome-website"],
+    // },
+    // {
+    //     name: "Saving Photo Memories",
+    //     image: p6,
+    //     tags: ["website"],
+    // },
 ];
 
 export const achievements = [

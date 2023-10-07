@@ -50,6 +50,7 @@ const Testimonials = () => {
 							<div className='mb-[25px]'>
 								<img
 									src='https://i.pravatar.cc/300'
+									alt='slide1'
 									className='w-[80px] h-[80px] max-w-[80px] rounded-full'
 								/>
 								<div className='font-bold'>John Doy</div>
@@ -67,11 +68,13 @@ const Testimonials = () => {
 							</div>
 						</div>
 						{/* SLIDE END */}
+
 						{/* SLIDE START */}
 						<div className='text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]'>
 							<div className='mb-[25px]'>
 								<img
 									src='https://i.pravatar.cc/300'
+									alt='slide2'
 									className='w-[80px] h-[80px] max-w-[80px] rounded-full'
 								/>
 								<div className='font-bold'>John Doy</div>
@@ -89,11 +92,13 @@ const Testimonials = () => {
 							</div>
 						</div>
 						{/* SLIDE END */}
+
 						{/* SLIDE START */}
 						<div className='text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]'>
 							<div className='mb-[25px]'>
 								<img
 									src='https://i.pravatar.cc/300'
+									alt='slide3'
 									className='w-[80px] h-[80px] max-w-[80px] rounded-full'
 								/>
 								<div className='font-bold'>John Doy</div>

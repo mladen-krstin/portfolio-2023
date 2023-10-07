@@ -1,0 +1,23 @@
+{
+	"name": "dev78 - Web Developer Portfolio site",
+	"short_name": "dev78",
+	"start_url": ".",
+	"background_color": "#111111",
+	"theme_color": "orange",
+	"display": "standalone",
+	"prefer_related_applications": "false",
+	"icons": [
+		{
+			"src": "src/assets/dev78.webp",
+			"sizes": "512x512",
+			"type": "image/webp",
+			"purpose": "any"
+		},
+		{
+			"src": "src/assets/dev78.webp",
+			"sizes": "512x512",
+			"type": "image/webp",
+			"purpose": "maskable"
+		}
+	]
+}

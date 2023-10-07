@@ -15,7 +15,7 @@ const Footer = () => {
 						<div className='w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center'>
 							<img
 								src={gmailIcon}
-								alt=''
+								alt='gmail'
 								className='w-[18px]'
 							/>
 						</div>
@@ -24,7 +24,10 @@ const Footer = () => {
 					<div>All rights reserved &copy; Copyright by dev78 Team</div>
 					<ul className='flex 2xl:text-[20px] gap-5 md:gap-8'>
 						<li className='cursor-pointer transition active:scale-90'>
-							<a href='https://www.linkedin.com/in/mladen-krstin/'>
+							<a
+								href='https://www.linkedin.com/in/mladen-krstin/'
+								alt='linkedin'
+							>
 								<CiLinkedin size={24} />
 							</a>
 						</li>
@@ -46,13 +49,13 @@ const Footer = () => {
 						>
 							Skills
 						</li>
-						{/* <li
+						<li
 							className='cursor-pointer transition active:scale-90'
 							onClick={() => scrollTo('work')}
 						>
 							Work
 						</li>
-						<li
+						{/* <li
 							className='cursor-pointer transition active:scale-90'
 							onClick={() => scrollTo('contact')}
 						>
